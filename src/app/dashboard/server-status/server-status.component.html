@@ -1,0 +1,14 @@
+<article>
+    <div *ngIf="currentStatus === 'online'">
+        <p>Servers are online</p>
+        <p>All systems are operational.</p>
+    </div>
+    <div *ngIf="currentStatus === 'offline'">
+      <p>Servers are offline</p>
+      <p>Functionality should be restored soon.</p>
+    </div>
+    <div *ngIf="currentStatus !== 'offline' && currentStatus !== 'online'">
+      <p>Servers are offline</p>
+      <p>Functionality should be restored soon.</p>
+    </div>
+  </article>
