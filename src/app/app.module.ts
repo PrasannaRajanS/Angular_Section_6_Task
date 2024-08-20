@@ -10,6 +10,8 @@ import { TrafficComponent } from './dashboard/traffic/traffic.component';
 import { DashboardItemComponent } from './dashboard/dashboard-item/dashboard-item.component';
 import { NewTicketComponent } from './dashboard/tickets/new-ticket/new-ticket.component';
 import { TicketComponent } from './dashboard/tickets/ticket/ticket.component';
+import { ButtonComponent } from './shared/button/button.component';
+import { ControlComponent } from './shared/control/control.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { TicketComponent } from './dashboard/tickets/ticket/ticket.component';
     TrafficComponent,
     DashboardItemComponent,
     NewTicketComponent,
-    TicketComponent
+    TicketComponent,
+    ButtonComponent,
+    ControlComponent
   ],
   imports: [
     BrowserModule,
