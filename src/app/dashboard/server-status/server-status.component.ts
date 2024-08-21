@@ -8,4 +8,12 @@ import { Component } from '@angular/core';
 export class ServerStatusComponent {
 
   currentStatus = 'online';
+
+  constructor(){
+
+  }
+
+  ngOnInit(){
+    console.log('On Init');
+  }
 }

@@ -1,13 +1,22 @@
 
-    <div *ngIf="currentStatus === 'online'">
-        <p>Servers are online</p>
-        <p>All systems are operational.</p>
-    </div>
-    <div *ngIf="currentStatus === 'offline'">
-      <p>Servers are offline</p>
-      <p>Functionality should be restored soon.</p>
-    </div>
-    <div *ngIf="currentStatus !== 'offline' && currentStatus !== 'online'">
-      <p>Servers are offline</p>
-      <p>Functionality should be restored soon.</p>
-    </div>
+<div [class]="{
+  status:true,
+  'status-online': currentStatus === 'online',
+  'status-offline': currentStatus === 'offline',
+  'status-unknown': currentStatus === 'unknown',
+}">
+
+  <div *ngIf="currentStatus === 'online'">
+    <p>Servers are online</p>
+    <p>All systems are operational.</p>
+  </div>
+  <div *ngIf="currentStatus === 'offline'">
+    <p>Servers are offline</p>
+    <p>Functionality should be restored soon.</p>
+  </div>
+  <div *ngIf="currentStatus !== 'offline' && currentStatus !== 'online'">
+    <p>Servers are offline</p>
+    <p>Functionality should be restored soon.</p>
+  </div>
+
+</div>
